@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<title>Activity 4</title>
+</head>
+<body class="bg-primary">
+	<div class ="container bg-light text-center p-5 rounded">
+	<h2>JavaScript Activity 4</h2>
+	<p>Type in a number (in Seconds) and the website will show what it will be in milliseconds, minutes, and hours.</p>
+
+	<form>
+		Enter time in seconds:<input type="text" id="num1"><br><br>
+		
+		<button type="submit" class="bg-success text-light btn" onclick="Compute()">Calculate</button>
+
+	</form>
+
+	<script type="text/javascript">
+		function Compute(){
+			let num1 = document.getElementById("num1").value;
+			let minute = num1 / 60;
+			let millisecond = num1 * 1000;
+			let hour = num1 / 3600;
+
+
+			window.alert("Your number in Milliseconds: " + millisecond);
+			window.alert("Your number in Minutes: " + minute);
+			window.alert("Your number in Hours: " + hour);
+
+		}
+	</script>
+</div>
+</body>
+</html>

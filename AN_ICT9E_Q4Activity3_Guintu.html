@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<title>Activity 3</title>
+</head>
+<body>
+	<h2>Javascript Events and Functions</h2>
+	<p>Create a JavaScript program that will allow the user to input values and do calculations.</p>
+
+	<form>
+		Enter First number:<input type="text" id="num1"><br><br>
+		Enter Second number:<input type="text" id="num2"><br><br>
+		<button type="submit" onclick="Compute()">Calculate</button>
+
+	</form>
+
+	<script type="text/javascript">
+		function Compute(){
+			let num1 = document.getElementById("num1").value;
+			let num2 = document.getElementById("num2").value;
+			let product = num1 * num2;
+
+			window.alert("The Product of the two numbers is: " + product);
+		}
+	</script>
+</body>
+</html>
